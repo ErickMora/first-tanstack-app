@@ -4,10 +4,11 @@ import { useSession } from '@tanstack/react-start/server'
 
 type SessionUser = {
   //userEmail: User['email']
+  userEmail: 'admin@admin.com'
 }
 
 export function useAppSession() {
   return useSession<SessionUser>({
-    password: 'ChangeThisBeforeShippingToProdOrYouWillBeFired',
+    password: 'Admin12345',
   })
 }
